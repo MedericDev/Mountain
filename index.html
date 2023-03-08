@@ -14,12 +14,14 @@
     <header class="header_content">
         <h1>La montage <br> ça vous gagne</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa beatae quidem a repudiandae amet.</p>
-        <i class="fa-regular fa-arrow-down"></i>
+        <span><a href="#main"><i class="fa-solid fa-arrow-down"></i></a></span>
         <nav class="navlinks">
-            <ul>
+            <ul class="nav-left">
                 <li><a href="">This is massively</a></li>
                 <li><a href="">Generic page</a></li>
                 <li><a href="">Elements reference</a></li>
+            </ul>
+            <ul class="nav_right">
                 <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
                 <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
@@ -27,68 +29,67 @@
             </ul>
         </nav>
     </header>
-    <main class="main-content">
+    <main id="main" class="main-content">
         <section class="section_header">
-            <p class="date">April 25, 2017</p>
+            <span>spanApril 25, 2017</span>
             <h2>And this a <br> massive headline</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Nostrum veritatis, libero sequi esse voluptatum, alias quibusdam veniam praesentium voluptas fugiat
                 aliquid
                 consequuntur,
                 saepe dicta! Dignissimos eos minus cupiditate rerum officia?</p>
-            <div class="sectionHeader_img"></div>
-            <button>Full story</button>
+            <button class="btn">Full story</button>
+            <img src="./assets/images/pic01.jpg" alt="">
         </section>
         <section class="section_main">
-            <div class="left_content">
-                <p class="date">Apris 24, 2017</p>
+            <div class="left_part">
+                <span>Apris 24, 2017</span>
                 <h3>Sed magna <br> Ipsum Faucibus</h3>
-                <div class="sectionMain_img"></div>
-                <button>Full story</button>
+                <img src="./assets/images/pic02.jpg" alt="">
+                <button class="btn">Full story</button>
             </div>
-            <div class="right_content">
-                <p class="date">Apris 22, 2017</p>
+            <div class="right_part">
+                <span>Apris 22, 2017</span>
                 <h3>Primis eget<br>Imperdiet Lorem</h3>
-                <div class="sectionMain_img"></div>
-                <button>Full story</button>
+                <img src="./assets/images/pic03.jpg" alt="">
+                <button class="btn">Full story</button>
             </div>
         </section>
     </main>
     <footer>
-        <div class="form">
-            <form action="">
-                <div>
-                    <label for="nom">Name</label>
-                    <br>
-                    <input type="text" name="nom">
-                </div>
-                <div>
-                    <label for="mail">Email</label>
-                    <br>
-                    <input type="email" name="mail">
-                </div>
-                <div>
-                    <label for="text">Message</label>
-                    <br>
-                    <textarea name="Text"></textarea>
-                </div>
-            </form>
-        </div>
+        <form action="">
+            <div>
+                <label for="nom">Name</label>
+                <br>
+                <input type="text" name="nom">
+            </div>
+            <div>
+                <label for="mail">Email</label>
+                <br>
+                <input type="email" name="mail">
+            </div>
+            <div>
+                <label for="text">Message</label>
+                <br>
+                <textarea name="Text"></textarea>
+            </div>
+            <input type="submit" class="btn" value="send message">
+        </form>
         <div class="Contact">
             <div>
-                <p>Adresse</p>
-                <p>1234 Somewhere Road #87257 Nashville, TN ooooo-oooo</p>
+                <h3>Adresse</h3>
+                <h3>1234 Somewhere Road #87257 <br> Nashville, TN ooooo-oooo</h3>
             </div>
             <div>
-                <p>Phone</p>
-                <p>(ooo) ooo-oooo</p>
+                <h3>Phone</h3>
+                <h3>(ooo) ooo-oooo</h3>
             </div>
             <div>
-                <p>Email</p>
-                <p>info@untiled.ldt</p>
+                <h3>Email</h3>
+                <h3>info@untiled.ldt</h3>
             </div>
-            <div>
-                <p>Social</p>
+            <div class="social">
+                <h3>Social</h3>
                 <ul>
                     <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -101,4 +102,7 @@
 
 </body>
 
-<div></html></div>
+<div>
+
+</html>
+</div>
