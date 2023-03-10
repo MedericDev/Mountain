@@ -38,6 +38,17 @@ body {
   text-align: center;
   max-width: 1300px;
   margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.btn {
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 3px solid black;
+  background: transparent;
+  font-size: 0.8rem;
 }
 
 header {
@@ -53,16 +64,17 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transform: translateY(40px);
+  transform: translateY(100px);
   color: white;
 }
 .header_content h1 {
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 .header_content p {
   margin: 50px 0;
+  font-style: italic;
 }
 .header_content i {
   border: 1px solid white;
@@ -80,6 +92,12 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.navlinks .nav_left li:first-child {
+  background: white;
+}
+.navlinks .nav_left li:first-child a {
+  color: black;
+}
 .navlinks .nav_left,
 .navlinks .nav_right {
   display: flex;
@@ -88,17 +106,103 @@ header {
 }
 .navlinks .nav_left a,
 .navlinks .nav_right a {
-  padding: 10px 15px;
+  padding: 20px 20px;
   color: white;
   display: inline-block;
   transition: 0.3s ease;
   text-transform: uppercase;
   font-family: inter, sans-serif;
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .navlinks .nav_left a:hover,
 .navlinks .nav_right a:hover {
   background: white;
   color: black;
+}
+
+.main-content {
+  height: 100%;
+  background: white;
+}
+.main-content .section_header {
+  position: relative;
+}
+.main-content .section_header span {
+  font-size: 1Rem;
+  display: inline-block;
+  margin: 50px 0;
+}
+.main-content .section_header span::before {
+  content: "";
+  height: 1px;
+  width: 30%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.089);
+  right: 120px;
+  top: 55px;
+}
+.main-content .section_header span::after {
+  content: "";
+  height: 1px;
+  width: 30%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.089);
+  left: 120px;
+  top: 55px;
+}
+.main-content .section_header h2 {
+  margin: 30px 0;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.main-content .section_header p {
+  width: 50%;
+  margin: 0 auto;
+  font-style: italic;
+  line-height: 35px;
+}
+.main-content .section_header img {
+  width: 80%;
+  display: block;
+  margin: 20px auto;
+}
+.main-content .section_header .btn {
+  margin: 30px 0 80px 0;
+}
+.main-content .section_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main-content .section_main .left_part,
+.main-content .section_main .right_part {
+  margin-top: 50px;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.089);
+}
+.main-content .section_main .left_part span,
+.main-content .section_main .right_part span {
+  display: inline-block;
+  margin: 20px 0 20px 0;
+}
+.main-content .section_main .left_part h3,
+.main-content .section_main .right_part h3 {
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.main-content .section_main .left_part p,
+.main-content .section_main .right_part p {
+  width: 80%;
+  margin: 30px auto;
+  text-align: justify;
+}
+.main-content .section_main .left_part img,
+.main-content .section_main .right_part img {
+  width: 80%;
+}
+.main-content .section_main .left_part .btn,
+.main-content .section_main .right_part .btn {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=index.css.map */
