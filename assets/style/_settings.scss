@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "inter";
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: "merry";
+    src: url(../fonts/Merriweather-Light.ttf);
+}
+
+$font1: inter, sans-serif;
+$font2: merry, sans-serif;
+
+$color1: white;
+$color2: black;
+
+/********** Basic style **********/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2,
+h3{
+    font-family: $font1;
+}
+
+p,
+span {
+    font-family: $font2;
+}
+
+body{
+  background: url(../images/bg.jpg) fixed center/cover;
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+

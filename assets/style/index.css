@@ -1,1 +1,104 @@
-/*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: "inter";
+  src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+  font-family: "merry";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+/********** Basic style **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+h3 {
+  font-family: inter, sans-serif;
+}
+
+p,
+span {
+  font-family: merry, sans-serif;
+}
+
+body {
+  background: url(../images/bg.jpg) fixed center/cover;
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(40px);
+  color: white;
+}
+.header_content h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3rem;
+}
+.header_content p {
+  margin: 50px 0;
+}
+.header_content i {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 15px;
+  background: transparent;
+  color: white;
+}
+
+.navlinks {
+  max-width: 1300px;
+  background: rgba(255, 255, 255, 0.192);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navlinks .nav_left,
+.navlinks .nav_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navlinks .nav_left a,
+.navlinks .nav_right a {
+  padding: 10px 15px;
+  color: white;
+  display: inline-block;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  font-family: inter, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.navlinks .nav_left a:hover,
+.navlinks .nav_right a:hover {
+  background: white;
+  color: black;
+}/*# sourceMappingURL=index.css.map */
