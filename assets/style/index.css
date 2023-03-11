@@ -47,6 +47,9 @@ body:before {
   height: 100%;
   top: 0;
   left: 0;
+  background: rgb(17, 17, 17);
+  animation: animBefore 1.5s ease forwards;
+  animation-delay: 0.15s;
 }
 @keyframes animBefore {
   to {

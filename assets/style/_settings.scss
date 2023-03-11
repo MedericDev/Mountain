@@ -64,9 +64,9 @@ body{
     height: 100%;
     top: 0;
     left: 0;
-    // background: $black1;
-    // animation: animBefore 1.5s ease forwards;
-    // animation-delay: .15s;
+    background: $black1;
+    animation: animBefore 1.5s ease forwards;
+    animation-delay: .15s;
 
     @keyframes animBefore {
         to {
