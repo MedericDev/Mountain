@@ -11,8 +11,17 @@
 $font1: inter, sans-serif;
 $font2: merry, serif;
 
-$color1: white;
-$color2: black;
+$black1: rgb(17,17,17);
+$white1: rgb(243,243,243);
+$grey1:rgb(209, 209, 209);
+$grey2:rgb(233, 233, 233);
+$grey3:rgb(105, 105, 105);
+
+@mixin title{
+    font-family: $font1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
 /********** Basic style **********/
 * {
@@ -21,13 +30,18 @@ $color2: black;
     padding: 0;
 }
 
-ul {
+html {
+    scroll-behavior: smooth;
+}
+
+li {
     list-style: none;
 }
 
-a {
+a,
+a:visited {
     text-decoration: none;
-    color: black;
+    color: $white1;
 }
 
 h1,
@@ -36,16 +50,29 @@ h3{
     font-family: $font1;
 }
 
-p,
-span {
-    font-family: $font2;
-}
-
 body{
   background: url(../images/bg.jpg) fixed center/cover;
   text-align: center;
+  font-family: $font2;
   max-width: 1300px;
   margin: 0 auto;
-  overflow-x: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: $black1;
+    // animation: animBefore 1.5s ease forwards;
+    // animation-delay: .15s;
+
+    @keyframes animBefore {
+        to {
+            opacity: 0;
+        }
+    }
+  }
 }
 
